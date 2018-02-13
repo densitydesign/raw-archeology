@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Raw 0.1</title>
+	
+	<!-- d3 -->
+	<script type="text/javascript" src="lib/d3/d3.v2.min.js"></script>
+	
+	<!-- jQuery -->
+	<script src="lib/jquery/jquery-1.7.1.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="lib/jquery-ui/jquery-ui-1.8.17.custom.min.js"></script>
+	<!-- jQuery Lined TextArea Plugin -->
+	<script src="lib/jquery-linedtextarea/jquery-linedtextarea.js"></script>
+	<!-- jQuery Tabs in TextArea Plugin -->
+	<script src="lib/jquery-textarea/jquery.textarea.js"></script>
+	<!-- jQuery Mousewheel -->
+	<script src="lib/jscrollpane/jquery.mousewheel.js"></script>	
+	<!-- jQuery jScrollpane -->
+	<script src="lib/jscrollpane/jquery.jscrollpane.min.js"></script>
+	
+	<!-- Raw -->
+	<script src="src/raw.js" type="text/javascript"></script>
+	<script src="src/raw.io.js" type="text/javascript"></script>
+	<script src="src/raw.structure.js" type="text/javascript"></script>
+	<script src="src/raw.vis.js" type="text/javascript"></script>
+	<script src="src/raw.gui.js" type="text/javascript"></script>
+	
+	<!-- Style -->
+	<link type="text/css" rel="stylesheet" href="style/jquery-ui-1.8.18.custom.css"/>
+	<link type="text/css" rel="stylesheet" href="style/jquery.jscrollpane.css"/>
+	<link type="text/css" rel="stylesheet" href="style/style.css"/>
+	
+</head>
+<body>
+		<div id="wrapper">
+			
+			<div id="header">
+				<div id="info" >
+					<ul>
+						<li>Raw</li>
+						<li>About</li>
+						<li style="float:right;">by <a href="http://www.densitydesign.org">DensityDesign</a></li>
+					</ul>
+
+				</div>
+				<div id="toolbar">
+					<div class="">
+						<span class="btn disabled" id="export-svg">
+							Export as .svg
+						</span>
+
+						<span class="btn disabled" id="export-data">
+							Export data
+						</span>
+					</div>
+					<div class="clear"></div>
+
+				</div>
+			</div><!-- end of header -->
+				
+			<div id="container">
+					
+					<div class="panel" id="top-panel">
+						<div class="side">
+							<span class="title">Data</span>
+							<p class="description">Paste your data in the box on the right as delimiter-separated values: copy and paste from your spreadsheet or text editor (first row as header).</p>
+							<span id="expand-data" class="btn disabled">Continue</span>
+						</div>
+						
+						<div class="content-wrapper">
+							<div class="content">
+								<div id="loader"></div>
+								
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+						
+					</div>
+					
+						
+					<div id="middle-panel">
+						
+						<div class="intern">
+							<div class="side">
+								<span class="title">Mapping</span>
+								<p class="description">Choose the visualization layout. Then define the data structure by dragging the dimensions from your data to the panels on the right.</p>
+							<div id="set-vis"></div>
+							</div>
+
+							<div class="content-wrapper">
+								<div class="content">
+									<div id="set-map"></div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+						
+						
+					</div>
+					
+					
+					<div class="panel" id="bottom-panel">
+						
+						<div class="intern">
+							<div class="side">
+								<div class="content-side">
+									<span class="title">Layout</span>
+									<p class="description">Set the options for your visualization.</p>
+									<div id="set-layout"></div>
+								</div>
+							</div>
+
+							<div class="content-wrapper">
+								<div class="content">
+									<div id="vis"></div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+						
+						
+						</div>
+				
+			</div><!-- end of container -->		
+		
+						
+		</div><!-- end of wrapper -->	
+		
+		
+		<script src="src/main.js" type="text/javascript"></script>
+		
+
+</body>
+</html>
